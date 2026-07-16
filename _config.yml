@@ -1,0 +1,9 @@
+title: Waddle to Run
+description: Legal information for the Waddle to Run iOS app.
+url: https://spammusubitech.github.io
+baseurl: /waddle-to-run
+markdown: kramdown
+permalink: pretty
+exclude:
+  - README.md
+
