@@ -9,6 +9,8 @@ permalink: /privacy/
 
 Last updated: August 5, 2026
 
+Version: 2026-08-05.2
+
 This Privacy Policy explains how Spam Musubi Technologies LLC handles information when You use Waddle to Run. References to Waddle to Run may include the `goose-running` app, public pages, support materials, or similar names used for the Service.
 
 Waddle to Run helps people begin or return to walking and running with adaptive plans, GPS run tracking, route cards, reminders, progress, and a playful goose companion. Most plan, route, run, and preference information is stored on Your Device and, when available under Your Apple and iCloud settings, in Your private iCloud database.
@@ -43,7 +45,7 @@ For this Privacy Policy:
 Depending on the features You use, You may provide:
 
 - Onboarding and plan choices, such as prior running experience, current jogging capacity, goals, preferred running location, perceived blockers, difficulty preference, preferred run days, and weekly goal.
-- Eligibility and legal-acknowledgment information, such as confirmation that You are at least 18; the versions and content hashes of the Terms and Privacy Policy; the agreement-screen version and content hash, including its safety notice; the acceptance date; and the Application version, build, platform, and locale. The Application does not request Your date of birth or an identity document for this confirmation.
+- Legal-acknowledgment information, such as the versions and content hashes of the Terms and Privacy Policy; the agreement-screen version and content hash, including its safety notice; the acceptance date; and the Application version, build, platform, and locale. The Application does not collect a separate age attestation as part of this agreement.
 - Settings and preferences, such as distance units, audio and interval cues, reminders, route privacy mode, Apple Health saving, and commentary choices.
 - Run reflections, including an optional mood, feeling, or note after a run.
 - Routes You draw or save and names You give them.
@@ -206,9 +208,9 @@ You are responsible for maintaining the security of Your Device, Apple account, 
 
 ## Age Restriction and Children’s Privacy
 
-The Service and its activity features are intended only for people who are at least 18 years old. Before starting a first activity, the Application requires confirmation that the user is at least 18.
+The Service and its activity features are intended only for people who are at least 18 years old. We communicate this eligibility restriction through the Application Store listing and Our Terms, but the Application does not ask You to attest to or verify Your age before an activity.
 
-Because this confirmation occurs after onboarding and Subscription purchase, the limited onboarding, purchase, Device, and analytics information described in this Privacy Policy may be processed before age confirmation. A person who cannot confirm that they are at least 18 may not start an activity through the Service.
+An Application Store may apply its own age ratings, family controls, account settings, or age-assurance processes. Those controls are operated by the Application Store and do not provide the Company with a separate in-app age attestation from You. The limited onboarding, purchase, Device, and analytics information described in this Privacy Policy may therefore be processed without the Company independently verifying Your age.
 
 We do not request a date of birth or identity document for age verification. If You believe someone under 18 has provided Personal Data through the Service, contact Us so We can take appropriate steps as required by law. The Service is not listed as a Kids Category app.
 

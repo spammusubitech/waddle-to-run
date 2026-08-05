@@ -9,6 +9,8 @@ permalink: /terms/
 
 Last updated: August 5, 2026
 
+Version: 2026-08-05.3
+
 Please read these Terms and Conditions carefully before using Waddle to Run. References to Waddle to Run may include the `goose-running` app, public pages, support materials, or similar names used for the Service.
 
 ## Interpretation and Definitions
@@ -35,11 +37,11 @@ For these Terms and Conditions:
 
 ## Acknowledgment
 
-These Terms govern Your use of the Service and form a binding agreement between You and the Company. Before starting Your first activity, You must affirmatively accept these Terms in the Application. By checking the required acknowledgments and selecting “Agree & Continue,” You acknowledge that You have read, understood, and agree to be bound by these Terms, including the Important Fitness and Health Notice and the Voluntary Participation, Assumption of Risk, and Release. Your selections and use of “Agree & Continue” constitute Your electronic signature and acceptance of these Terms. If You do not agree, do not begin an activity through the Service.
+These Terms govern Your use of the Service and form a binding agreement between You and the Company. Before starting Your first activity, You must affirmatively accept these Terms in the Application. By checking the required acknowledgments and selecting “Agree & start my run,” You acknowledge that You have read, understood, and agree to be bound by these Terms, including the Important Fitness and Health Notice and the Voluntary Participation, Assumption of Risk, and Release. Your selections and use of “Agree & start my run” constitute Your electronic signature and acceptance of these Terms. If You do not agree, do not begin an activity through the Service.
 
 Your use of the Service is also subject to Our [Privacy Policy](https://spammusubitech.github.io/waddle-to-run/privacy/), which explains how the Application handles location and route data, running plans and progress, Apple Health workouts, iCloud sync, notifications, route sharing, purchases, analytics, and support requests.
 
-**Adults Only.** The Service and its activity features are intended only for adults. You must be at least 18 years old and legally capable of entering into these Terms. By selecting “Agree & Continue,” You represent and warrant that You are at least 18 years old. A parent or guardian may not accept these Terms on behalf of a person under 18. If You are under 18, You must not start or participate in an activity through the Service.
+**Adults Only.** The Service and its activity features are intended only for adults. You must be at least 18 years old and legally capable of entering into these Terms. The Application does not ask You to attest to or verify Your age before an activity, and availability through an Application Store does not waive this eligibility requirement. A parent or guardian may not accept these Terms on behalf of a person under 18. If You are under 18, You must not start or participate in an activity through the Service.
 
 ## The Service
 
