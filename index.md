@@ -16,9 +16,8 @@ Waddle to Run is a beginner-friendly running and walking app from Spam Musubi Te
   </a>
   <a class="legal-link" href="{{ '/terms/' | relative_url }}">
     <strong>Terms &amp; Conditions</strong>
-    <span>Subscriptions, fitness and outdoor-safety notices, and service terms.</span>
+    <span>Subscriptions, fitness and outdoor-safety notices, assumption of risk, liability release, and service terms.</span>
   </a>
 </div>
 
 Questions? Email [contact@spammusubitech.com](mailto:contact@spammusubitech.com).
-

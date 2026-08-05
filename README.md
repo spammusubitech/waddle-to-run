@@ -9,3 +9,6 @@ Public URLs:
 
 The contents of this directory are published from the separate public `spammusubitech/waddle-to-run` repository so the public site name matches the app name.
 
+## Publishing requirement
+
+Edits in this directory do **not** update the public pages automatically. A legal-document change is not released until the corresponding files are synchronized to the public repository and both public URLs above are opened and verified. Keep the public “Last updated” dates aligned with the canonical files in this directory.

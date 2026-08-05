@@ -98,6 +98,16 @@ p, ul { max-width: 74ch; }
 ul { padding-left: 1.35rem; }
 li + li { margin-top: 0.45rem; }
 hr { border: 0; border-top: 1px solid var(--line); margin: 2rem 0; }
+blockquote {
+  margin: 1rem 0 1.35rem;
+  padding: 18px 20px;
+  border: 1px solid rgba(176, 104, 42, 0.28);
+  border-left: 5px solid #b0682a;
+  border-radius: 14px;
+  color: #613713;
+  background: rgba(232, 180, 91, 0.2);
+}
+blockquote p { margin: 0; }
 
 .legal-card > p:first-of-type {
   color: var(--muted);
@@ -137,4 +147,3 @@ footer {
   .legal-card { border-radius: 22px; }
   footer { flex-direction: column; gap: 6px; }
 }
-

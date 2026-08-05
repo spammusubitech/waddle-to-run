@@ -7,7 +7,7 @@ permalink: /privacy/
 
 # Privacy Policy for Waddle to Run
 
-Last updated: July 16, 2026
+Last updated: July 30, 2026
 
 This Privacy Policy explains how Spam Musubi Technologies LLC handles information when You use Waddle to Run. References to Waddle to Run may include the `goose-running` app, public pages, support materials, or similar names used for the Service.
 
@@ -89,7 +89,7 @@ Health data is stored and managed by Apple Health on Your Device and through App
 
 ### Notifications and Audio Cues
 
-If notification permission is granted, the Application can schedule local reminders for planned runs. Reminder scheduling and delivery are handled by Your Device and Apple notification services. The current build uses local plan reminders and is not designed to send marketing push notifications.
+If notification permission is granted, the Application can schedule local reminders for planned runs and, when promised on a trial paywall, before a Subscription trial renews. Reminder scheduling and delivery are handled by Your Device and Apple notification services. The current build uses local reminders and is not designed to send marketing push notifications.
 
 If audio cues are enabled, the Application may use on-device speech synthesis and haptics for run, walk, and interval prompts. The Application is not designed to record microphone audio.
 
@@ -117,7 +117,11 @@ Depending on Your Device, Apple account, iCloud, backup, and Application setting
 - Application data may be included in Device or iCloud backups.
 - Apple may process map requests, location permissions, Health data, notifications, purchase records, crash reports, performance diagnostics, and App Store analytics under Apple’s policies.
 
-We do not operate a separate server that stores Your raw GPS route history. The current Application does not include a third-party advertising SDK. The PostHog software framework is bundled as a project dependency, but the current Application code does not configure PostHog or send product-analytics events to it. If We enable third-party analytics in a future version, We will update this Privacy Policy and make any required disclosures or consent controls available.
+We do not operate a separate server that stores Your raw GPS route history. The Application does not include a third-party advertising SDK.
+
+When product analytics is enabled and the Application is configured for analytics, We use PostHog to process pseudonymous Usage Data such as Application lifecycle events, screens viewed, feature interactions, onboarding progress, purchase-funnel interactions, permission outcomes, and coarse buckets for run duration, distance, and activity counts. Analytics events may also include Device and Application metadata supplied by the analytics software, such as Application version, operating-system version, Device type, locale, and a random installation identifier.
+
+Our analytics event layer is designed not to send raw GPS coordinates, route geometry or titles, Health data, free-form notes, mood or post-run feeling responses, age range, onboarding blockers, Apple account details, or advertising identifiers. Session replay and generic touch autocapture are disabled. Product analytics can be turned off in the Application’s Privacy settings. Turning it off stops future analytics collection from that Device but does not automatically delete events already processed.
 
 ## How We Use Information
 
@@ -150,6 +154,7 @@ We may share information in the following situations:
 
 - **With Apple:** Apple may process information related to app distribution, purchases, iCloud and CloudKit, maps, location services, HealthKit, local notifications, Device backups, diagnostics, and App Store analytics.
 - **With RevenueCat:** RevenueCat helps Us manage purchases, Subscriptions, offerings, entitlements, purchase restoration, and related diagnostics.
+- **With PostHog:** PostHog helps Us understand pseudonymous Application usage, conversion funnels, feature adoption, and retention so We can improve the Service. RevenueCat may send purchase and Subscription lifecycle events to the same pseudonymous analytics profile when that integration is enabled.
 - **At Your direction:** When You choose to share a route postcard or other content, information is sent to the destination You select through the iOS share sheet.
 - **With Service Providers:** We may use providers for email, support, legal-page hosting, diagnostics, purchase validation, or similar operational needs.
 - **For legal reasons:** We may disclose information if required by law or in response to valid legal requests from public authorities.
@@ -171,25 +176,28 @@ Support messages and related correspondence may be retained as long as needed to
 
 Purchase and entitlement records are retained by the Application Store and RevenueCat according to their policies and as needed to provide the Service, restore purchases, comply with law, and prevent fraud.
 
+Pseudonymous analytics events are retained in PostHog according to Our configured retention settings and as needed to analyze and improve the Service, maintain security, and comply with law.
+
 ## Your Choices and Deleting Information
 
 You can:
 
 - Decline or revoke location, Health, and notification permissions in Your Device settings.
 - Turn off reminders, audio cues, Apple Health saving, or other optional features in the Application.
+- Turn off “Anonymous product analytics” in the Application’s Privacy settings to stop future PostHog events from that Device.
 - Delete individual saved routes where the Application provides that control.
 - Delete Application data by deleting records through available controls or deleting the Application, subject to iCloud sync and backup behavior.
 - Delete workouts written by Waddle to Run from the Apple Health app.
 - Manage iCloud and backup behavior through Your Apple account and Device settings.
 - Manage or cancel Subscriptions through Your Application Store account settings.
 
-Deleting the Application may not delete information stored by Apple or RevenueCat, including Application Store purchase history, active Subscriptions, Health workouts, iCloud data, backups, diagnostics, or entitlement records.
+Deleting the Application may not delete information already stored by Apple, RevenueCat, or PostHog, including Application Store purchase history, active Subscriptions, Health workouts, iCloud data, backups, diagnostics, entitlement records, or previously processed pseudonymous analytics.
 
 You may contact Us to request access, correction, or deletion of Personal Data You have provided directly to Us. Because much of the Service’s data is stored on Your Device or in Your private Apple services, We may not possess or be able to retrieve it. We may need to retain certain information when required or permitted by law.
 
 ## Security
 
-We use reasonable measures designed to protect information handled by the Service. Apple provides platform security for the Device, iCloud, CloudKit, HealthKit, and Application Store services, and RevenueCat provides security for purchase-management services. However, no method of electronic storage or transmission is completely secure, and We cannot guarantee absolute security.
+We use reasonable measures designed to protect information handled by the Service. Apple provides platform security for the Device, iCloud, CloudKit, HealthKit, and Application Store services; RevenueCat provides security for purchase-management services; and PostHog provides security for product-analytics processing. However, no method of electronic storage or transmission is completely secure, and We cannot guarantee absolute security.
 
 You are responsible for maintaining the security of Your Device, Apple account, backups, Device passcode, and biometric protections. Be careful when sharing route images or showing routes to others.
 
@@ -203,7 +211,7 @@ If You are under the age of majority where You live, You may use the Service onl
 
 The Company is located in the United States. If You contact Us or if information is processed by Our providers, information may be transferred to and processed in the United States or other countries where privacy laws may differ from those where You live.
 
-Apple may determine where information in iCloud, HealthKit, Application Store, maps, diagnostics, and similar Apple services is processed. RevenueCat and other providers may process information in the locations described in their policies.
+Apple may determine where information in iCloud, HealthKit, Application Store, maps, diagnostics, and similar Apple services is processed. RevenueCat, PostHog, and other providers may process information in the locations described in their policies.
 
 ## Your Privacy Rights
 
