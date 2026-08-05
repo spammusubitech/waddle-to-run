@@ -35,11 +35,11 @@ For these Terms and Conditions:
 
 ## Acknowledgment
 
-These Terms govern Your use of the Service and form a binding agreement between You and the Company. By downloading, installing, accessing, or using the Service, You acknowledge that You have read, understood, and agree to be bound by these Terms. If You do not agree with every part of these Terms, do not download, access, or use the Service.
+These Terms govern Your use of the Service and form a binding agreement between You and the Company. Before starting Your first activity, You must affirmatively accept these Terms in the Application. By checking the required acknowledgments and selecting “Agree & Continue,” You acknowledge that You have read, understood, and agree to be bound by these Terms, including the Important Fitness and Health Notice and the Voluntary Participation, Assumption of Risk, and Release. Your selections and use of “Agree & Continue” constitute Your electronic signature and acceptance of these Terms. If You do not agree, do not begin an activity through the Service.
 
 Your use of the Service is also subject to Our [Privacy Policy](https://spammusubitech.github.io/waddle-to-run/privacy/), which explains how the Application handles location and route data, running plans and progress, Apple Health workouts, iCloud sync, notifications, route sharing, purchases, analytics, and support requests.
 
-You must be at least 13 years old to use the Service. If You are under the age of majority where You live, a parent or legal guardian must review and agree to these Terms on Your behalf before You use the Service. A parent or legal guardian who permits a minor to use the Service agrees to these Terms for themselves and, to the maximum extent permitted by law, on behalf of the minor, and accepts responsibility for supervising the minor's use. Do not use the Service if any required permission has not been obtained.
+**Adults Only.** The Service and its activity features are intended only for adults. You must be at least 18 years old and legally capable of entering into these Terms. By selecting “Agree & Continue,” You represent and warrant that You are at least 18 years old. A parent or guardian may not accept these Terms on behalf of a person under 18. If You are under 18, You must not start or participate in an activity through the Service.
 
 ## The Service
 

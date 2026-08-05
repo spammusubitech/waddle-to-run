@@ -7,7 +7,7 @@ permalink: /privacy/
 
 # Privacy Policy for Waddle to Run
 
-Last updated: July 30, 2026
+Last updated: August 5, 2026
 
 This Privacy Policy explains how Spam Musubi Technologies LLC handles information when You use Waddle to Run. References to Waddle to Run may include the `goose-running` app, public pages, support materials, or similar names used for the Service.
 
@@ -42,7 +42,8 @@ For this Privacy Policy:
 
 Depending on the features You use, You may provide:
 
-- Onboarding and plan choices, such as age range, prior running experience, current jogging capacity, goals, preferred running location, perceived blockers, difficulty preference, preferred run days, and weekly goal.
+- Onboarding and plan choices, such as prior running experience, current jogging capacity, goals, preferred running location, perceived blockers, difficulty preference, preferred run days, and weekly goal.
+- Eligibility and legal-acknowledgment information, such as confirmation that You are at least 18; the versions and content hashes of the Terms and Privacy Policy; the agreement-screen version and content hash, including its safety notice; the acceptance date; and the Application version, build, platform, and locale. The Application does not request Your date of birth or an identity document for this confirmation.
 - Settings and preferences, such as distance units, audio and interval cues, reminders, route privacy mode, Apple Health saving, and commentary choices.
 - Run reflections, including an optional mood, feeling, or note after a run.
 - Routes You draw or save and names You give them.
@@ -178,6 +179,8 @@ Purchase and entitlement records are retained by the Application Store and Reven
 
 Pseudonymous analytics events are retained in PostHog according to Our configured retention settings and as needed to analyze and improve the Service, maintain security, and comply with law.
 
+Eligibility and legal-acknowledgment records may be retained on Your Device and in Your private iCloud database for as long as reasonably necessary to document the agreement You accepted, comply with law, and resolve disputes. Deleting the Application may not delete a record that remains in iCloud or a Device backup.
+
 ## Your Choices and Deleting Information
 
 You can:
@@ -201,11 +204,13 @@ We use reasonable measures designed to protect information handled by the Servic
 
 You are responsible for maintaining the security of Your Device, Apple account, backups, Device passcode, and biometric protections. Be careful when sharing route images or showing routes to others.
 
-## Children’s Privacy
+## Age Restriction and Children’s Privacy
 
-The Service is not directed to children under 13. We do not knowingly collect Personal Data directly from anyone under 13. If You believe a child under 13 has provided Us with Personal Data, contact Us and We will take appropriate steps to delete it.
+The Service and its activity features are intended only for people who are at least 18 years old. Before starting a first activity, the Application requires confirmation that the user is at least 18.
 
-If You are under the age of majority where You live, You may use the Service only with permission from a parent or legal guardian. The Service is not listed as a Kids Category app.
+Because this confirmation occurs after onboarding and Subscription purchase, the limited onboarding, purchase, Device, and analytics information described in this Privacy Policy may be processed before age confirmation. A person who cannot confirm that they are at least 18 may not start an activity through the Service.
+
+We do not request a date of birth or identity document for age verification. If You believe someone under 18 has provided Personal Data through the Service, contact Us so We can take appropriate steps as required by law. The Service is not listed as a Kids Category app.
 
 ## International Transfers
 
