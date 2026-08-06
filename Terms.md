@@ -9,7 +9,7 @@ permalink: /terms/
 
 Last updated: August 5, 2026
 
-Version: 2026-08-05.3
+Version: 2026-08-05.4
 
 Please read these Terms and Conditions carefully before using Waddle to Run. References to Waddle to Run may include the `goose-running` app, public pages, support materials, or similar names used for the Service.
 
@@ -37,7 +37,7 @@ For these Terms and Conditions:
 
 ## Acknowledgment
 
-These Terms govern Your use of the Service and form a binding agreement between You and the Company. Before starting Your first activity, You must affirmatively accept these Terms in the Application. By checking the required acknowledgments and selecting “Agree & start my run,” You acknowledge that You have read, understood, and agree to be bound by these Terms, including the Important Fitness and Health Notice and the Voluntary Participation, Assumption of Risk, and Release. Your selections and use of “Agree & start my run” constitute Your electronic signature and acceptance of these Terms. If You do not agree, do not begin an activity through the Service.
+These Terms govern Your use of the Service and form a binding agreement between You and the Company. Before starting Your first activity, You must affirmatively accept these Terms in the Application. By selecting “Agree to Terms & start,” You acknowledge that You have read, understood, and agree to be bound by these Terms, including the Important Fitness and Health Notice and the Voluntary Participation, Assumption of Risk, and Release. Your selection of “Agree to Terms & start” constitutes Your electronic signature and acceptance of these Terms. If You do not agree, do not begin an activity through the Service.
 
 Your use of the Service is also subject to Our [Privacy Policy](https://spammusubitech.github.io/waddle-to-run/privacy/), which explains how the Application handles location and route data, running plans and progress, Apple Health workouts, iCloud sync, notifications, route sharing, purchases, analytics, and support requests.
 
