@@ -1,7 +1,7 @@
 ---
 layout: android
 title: Terms & Conditions
-description: Terms, fitness-safety notice, assumption of risk, and conditions for using the Waddle: Beginner Running Coach Android app.
+description: "Terms, fitness-safety notice, assumption of risk, and conditions for using the Waddle: Beginner Running Coach Android app."
 permalink: /android/terms/
 ---
 
