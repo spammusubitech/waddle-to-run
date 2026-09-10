@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#f7f1df">
+    <meta name="description" content="{{ page.description | default: site.description | escape }}">
+    <title>{{ page.title | default: site.title | escape }} · Waddle: Beginner Running Coach</title>
+    <link rel="stylesheet" href="{{ '/assets/legal.css' | relative_url }}">
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="{{ '/' | relative_url }}" aria-label="Waddle: Beginner Running Coach legal home">
+        <span class="brand-mark" aria-hidden="true">W</span>
+        <span>
+          <strong>Waddle: Beginner Running Coach</strong>
+          <small>Legal &amp; privacy</small>
+        </span>
+      </a>
+      <nav aria-label="Legal pages">
+        <a href="{{ '/android/privacy/' | relative_url }}"{% if page.permalink == '/android/privacy/' %} aria-current="page"{% endif %}>Privacy</a>
+        <a href="{{ '/android/terms/' | relative_url }}"{% if page.permalink == '/android/terms/' %} aria-current="page"{% endif %}>Terms</a>
+      </nav>
+    </header>
+
+    <main class="page-shell">
+      <article class="legal-card">
+        {{ content }}
+      </article>
+    </main>
+
+    <footer>
+      <span>© {{ 'now' | date: '%Y' }} Spam Musubi Technologies LLC</span>
+      <a href="mailto:contact@spammusubitech.com">contact@spammusubitech.com</a>
+    </footer>
+  </body>
+</html>
+
