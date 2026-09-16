@@ -7,9 +7,9 @@ permalink: /privacy/
 
 # Privacy Policy for Waddle to Run
 
-Last updated: August 5, 2026
+Last updated: September 16, 2026
 
-Version: 2026-08-05.2
+Version: 2026-09-16.1
 
 This Privacy Policy explains how Spam Musubi Technologies LLC handles information when You use Waddle to Run. References to Waddle to Run may include the `goose-running` app, public pages, support materials, or similar names used for the Service.
 
@@ -120,11 +120,21 @@ Depending on Your Device, Apple account, iCloud, backup, and Application setting
 - Application data may be included in Device or iCloud backups.
 - Apple may process map requests, location permissions, Health data, notifications, purchase records, crash reports, performance diagnostics, and App Store analytics under Apple’s policies.
 
-We do not operate a separate server that stores Your raw GPS route history. The Application does not include a third-party advertising SDK.
+We do not operate a separate server that stores Your raw GPS route history. Configured app versions use Meta advertising measurement as described below.
 
 When product analytics is enabled and the Application is configured for analytics, We use PostHog to process pseudonymous Usage Data such as Application lifecycle events, screens viewed, feature interactions, onboarding progress, purchase-funnel interactions, permission outcomes, and coarse buckets for run duration, distance, and activity counts. Analytics events may also include Device and Application metadata supplied by the analytics software, such as Application version, operating-system version, Device type, locale, and a random installation identifier.
 
 Our analytics event layer is designed not to send raw GPS coordinates, route geometry or titles, Health data, free-form notes, mood or post-run feeling responses, age range, onboarding blockers, Apple account details, or advertising identifiers. Session replay and generic touch autocapture are disabled. Product analytics can be turned off in the Application’s Privacy settings. Turning it off stops future analytics collection from that Device but does not automatically delete events already processed.
+
+### Advertising Measurement
+
+Waddle to Run uses Meta's SDK to measure advertising performance through app-install and activation signals and confirmed new free-trial starts. Trial events contain the subscription product identifier, zero monetary value and currency, and an identifier derived from the store transaction, together with technical app and device information processed by the SDK. Trial-start signals may be sent without authorized App Tracking Transparency permission, except in restricted states. Advertising identifier (IDFA) collection is enabled only with authorized tracking permission. This version does not request tracking permission.
+
+When tracking permission is authorized, Waddle to Run provides RevenueCat with Meta's app-generated anonymous identifier and available advertising identifiers to match subscription activity with advertisements. When the RevenueCat Meta integration is enabled, RevenueCat may send consent-eligible paid subscription starts, trial conversions, renewals, and other purchase events, including amounts, currency, transaction identifiers, and attribution information. Server-side events can occur while the app is closed. RevenueCat and Meta also process technical app and device information under their respective policies.
+
+This integration does not forward raw GPS coordinates, saved routes, HealthKit information, running goals, reflections, or our PostHog analytics event stream to Meta. The product analytics switch controls PostHog collection; it does not disable these separate advertising-measurement signals.
+
+You can review tracking permission in Your Device settings. This release does not request tracking permission. Trial measurement is separate from the product analytics switch. Reopening the app refreshes consent information shared with RevenueCat. Changing settings or deleting the Application does not automatically delete information previously processed by Meta or RevenueCat. See Meta’s [Privacy Policy](https://www.facebook.com/privacy/policy/).
 
 ## How We Use Information
 
@@ -139,6 +149,7 @@ We use information for the following purposes:
 - To write completed workouts to Apple Health when You enable the feature and grant permission.
 - To process, verify, restore, or support In-app Purchases and Subscriptions.
 - To provide diagnostics, maintain reliability, prevent fraud, and improve the Service.
+- To measure advertising performance through the limited app and purchase signals described above.
 - To respond to support requests.
 - To comply with legal obligations and enforce Our Terms.
 - To protect the rights, safety, and security of users, the Company, and others.
@@ -157,6 +168,7 @@ We may share information in the following situations:
 
 - **With Apple:** Apple may process information related to app distribution, purchases, iCloud and CloudKit, maps, location services, HealthKit, local notifications, Device backups, diagnostics, and App Store analytics.
 - **With RevenueCat:** RevenueCat helps Us manage purchases, Subscriptions, offerings, entitlements, purchase restoration, and related diagnostics.
+- **With Meta:** Meta processes app-install, activation, and trial-start signals; RevenueCat may send consent-eligible purchase and subscription events as described under Advertising Measurement.
 - **With PostHog:** PostHog helps Us understand pseudonymous Application usage, conversion funnels, feature adoption, and retention so We can improve the Service. RevenueCat may send purchase and Subscription lifecycle events to the same pseudonymous analytics profile when that integration is enabled.
 - **At Your direction:** When You choose to share a route postcard or other content, information is sent to the destination You select through the iOS share sheet.
 - **With Service Providers:** We may use providers for email, support, legal-page hosting, diagnostics, purchase validation, or similar operational needs.
@@ -165,7 +177,7 @@ We may share information in the following situations:
 - **For business transfers:** Information may be transferred in connection with a merger, acquisition, financing, reorganization, sale of assets, or similar business transaction.
 - **With Your consent:** We may share information for another purpose if You consent.
 
-We do not sell Personal Data. We do not use Personal Data for cross-context behavioral advertising.
+We do not sell Personal Data for money. Advertising-measurement sharing with Meta may be considered sharing for cross-context behavioral advertising under applicable law. Contact Us about applicable opt-out rights using the contact details below.
 
 ## Retention
 
@@ -178,6 +190,8 @@ Apple Health workouts remain in Apple Health until You delete them there. Deleti
 Support messages and related correspondence may be retained as long as needed to respond to You, maintain business records, resolve disputes, comply with legal obligations, and enforce Our agreements.
 
 Purchase and entitlement records are retained by the Application Store and RevenueCat according to their policies and as needed to provide the Service, restore purchases, comply with law, and prevent fraud.
+
+Advertising-measurement records are processed and retained by Meta and RevenueCat under their policies and as needed to provide their services. You can contact Us to request access, correction, or deletion of advertising-measurement information associated with Your use of the Application.
 
 Pseudonymous analytics events are retained in PostHog according to Our configured retention settings and as needed to analyze and improve the Service, maintain security, and comply with law.
 
@@ -196,7 +210,7 @@ You can:
 - Manage iCloud and backup behavior through Your Apple account and Device settings.
 - Manage or cancel Subscriptions through Your Application Store account settings.
 
-Deleting the Application may not delete information already stored by Apple, RevenueCat, or PostHog, including Application Store purchase history, active Subscriptions, Health workouts, iCloud data, backups, diagnostics, entitlement records, or previously processed pseudonymous analytics.
+Deleting the Application may not delete information already stored by Apple, RevenueCat, PostHog, or Meta, including Application Store purchase history, active Subscriptions, Health workouts, iCloud data, backups, diagnostics, entitlement records, or previously processed pseudonymous analytics.
 
 You may contact Us to request access, correction, or deletion of Personal Data You have provided directly to Us. Because much of the Service’s data is stored on Your Device or in Your private Apple services, We may not possess or be able to retrieve it. We may need to retain certain information when required or permitted by law.
 
@@ -218,7 +232,7 @@ We do not request a date of birth or identity document for age verification. If 
 
 The Company is located in the United States. If You contact Us or if information is processed by Our providers, information may be transferred to and processed in the United States or other countries where privacy laws may differ from those where You live.
 
-Apple may determine where information in iCloud, HealthKit, Application Store, maps, diagnostics, and similar Apple services is processed. RevenueCat, PostHog, and other providers may process information in the locations described in their policies.
+Apple may determine where information in iCloud, HealthKit, Application Store, maps, diagnostics, and similar Apple services is processed. RevenueCat, PostHog, Meta, and other providers may process information in the locations described in their policies.
 
 ## Your Privacy Rights
 
