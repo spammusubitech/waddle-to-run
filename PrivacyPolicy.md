@@ -7,9 +7,9 @@ permalink: /privacy/
 
 # Privacy Policy for Waddle to Run
 
-Last updated: September 16, 2026
+Last updated: September 29, 2026
 
-Version: 2026-09-16.1
+Version: 2026-09-29.2
 
 This Privacy Policy explains how Spam Musubi Technologies LLC handles information when You use Waddle to Run. References to Waddle to Run may include the `goose-running` app, public pages, support materials, or similar names used for the Service.
 
@@ -126,15 +126,19 @@ When product analytics is enabled and the Application is configured for analytic
 
 Our analytics event layer is designed not to send raw GPS coordinates, route geometry or titles, Health data, free-form notes, mood or post-run feeling responses, age range, onboarding blockers, Apple account details, or advertising identifiers. Session replay and generic touch autocapture are disabled. Product analytics can be turned off in the Application’s Privacy settings. Turning it off stops future analytics collection from that Device but does not automatically delete events already processed.
 
+RevenueCat may also deliver subscription lifecycle events, including trial starts, paid purchases, conversions, renewals, cancellations, and expirations, to Our analytics relay hosted by Cloudflare. Cloudflare processes the incoming RevenueCat webhook to operate the relay. The relay sends events to PostHog only when RevenueCat has an enabled product-analytics preference and the Application’s pseudonymous PostHog identifier. It excludes advertising identifiers and unrelated subscriber attributes from the events forwarded to PostHog, and does not log or store webhook payloads. These events can occur while the Application is closed. Preference changes are synchronized to RevenueCat when connectivity is available; events already processed are not removed automatically.
+
 ### Advertising Measurement
 
-Waddle to Run uses Meta's SDK to measure advertising performance through app-install and activation signals and confirmed new free-trial starts. Trial events contain the subscription product identifier, zero monetary value and currency, and an identifier derived from the store transaction, together with technical app and device information processed by the SDK. Trial-start signals may be sent without authorized App Tracking Transparency permission, except in restricted states. Advertising identifier (IDFA) collection is enabled only with authorized tracking permission. This version does not request tracking permission.
+Waddle to Run uses Meta's SDK to measure advertising performance through app-install and activation signals and confirmed new free-trial starts. Trial events contain the subscription product identifier, zero monetary value and currency, and an identifier derived from the store transaction, together with technical app and device information processed by the SDK. Trial-start signals may be sent without authorized App Tracking Transparency permission, except in restricted states. Advertising identifier (IDFA) collection is enabled only with authorized tracking permission. The Application does not request tracking permission or require it to use the Application or purchase a subscription.
+
+For Apple Ads attribution, the Application sends Apple’s AdServices attribution token to RevenueCat so eligible installs can be associated with Apple Ads campaigns and later subscription activity. Apple’s standard AdServices attribution does not require ATT authorization. Availability depends on Apple’s attribution rules.
 
 When tracking permission is authorized, Waddle to Run provides RevenueCat with Meta's app-generated anonymous identifier and available advertising identifiers to match subscription activity with advertisements. When the RevenueCat Meta integration is enabled, RevenueCat may send consent-eligible paid subscription starts, trial conversions, renewals, and other purchase events, including amounts, currency, transaction identifiers, and attribution information. Server-side events can occur while the app is closed. RevenueCat and Meta also process technical app and device information under their respective policies.
 
 This integration does not forward raw GPS coordinates, saved routes, HealthKit information, running goals, reflections, or our PostHog analytics event stream to Meta. The product analytics switch controls PostHog collection; it does not disable these separate advertising-measurement signals.
 
-You can review tracking permission in Your Device settings. This release does not request tracking permission. Trial measurement is separate from the product analytics switch. Reopening the app refreshes consent information shared with RevenueCat. Changing settings or deleting the Application does not automatically delete information previously processed by Meta or RevenueCat. See Meta’s [Privacy Policy](https://www.facebook.com/privacy/policy/).
+You can review tracking permission in Your Device settings. The Application does not display a tracking-permission request. Trial measurement is separate from the product analytics switch. Reopening the app refreshes consent information shared with RevenueCat. Changing settings or deleting the Application does not automatically delete information previously processed by Meta or RevenueCat. See Meta’s [Privacy Policy](https://www.facebook.com/privacy/policy/).
 
 ## How We Use Information
 
@@ -170,6 +174,7 @@ We may share information in the following situations:
 - **With RevenueCat:** RevenueCat helps Us manage purchases, Subscriptions, offerings, entitlements, purchase restoration, and related diagnostics.
 - **With Meta:** Meta processes app-install, activation, and trial-start signals; RevenueCat may send consent-eligible purchase and subscription events as described under Advertising Measurement.
 - **With PostHog:** PostHog helps Us understand pseudonymous Application usage, conversion funnels, feature adoption, and retention so We can improve the Service. RevenueCat may send purchase and Subscription lifecycle events to the same pseudonymous analytics profile when that integration is enabled.
+- **With Cloudflare:** Cloudflare hosts Our subscription analytics relay and processes incoming RevenueCat webhooks to forward eligible events to PostHog as described above.
 - **At Your direction:** When You choose to share a route postcard or other content, information is sent to the destination You select through the iOS share sheet.
 - **With Service Providers:** We may use providers for email, support, legal-page hosting, diagnostics, purchase validation, or similar operational needs.
 - **For legal reasons:** We may disclose information if required by law or in response to valid legal requests from public authorities.
