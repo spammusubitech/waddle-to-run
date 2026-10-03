@@ -7,9 +7,9 @@ permalink: /android/terms/
 
 # Terms and Conditions for Waddle: Beginner Running Coach
 
-Last updated: September 9, 2026
+Last updated: October 2, 2026
 
-Version: android-2026-09-09.1
+Version: android-2026-10-02.1
 
 Please read these Terms and Conditions carefully before using Waddle: Beginner Running Coach. References to Waddle: Beginner Running Coach may include the `com.spammusubi.gooserunning` Android app, public pages, support materials, or similar names used for the Service.
 
@@ -179,7 +179,9 @@ The Company’s names, marks, graphics, characters, and trade dress may not be u
 
 ## Third-party Services
 
-The Service may rely on or link to third-party services, including Google Play, Android location and geocoding providers, OpenStreetMap map tiles, Health Connect, notifications, Device diagnostics, RevenueCat, legal-page hosting, email, and support providers.
+The Service may rely on or link to third-party services, including Google Play, Google Maps, Android location and geocoding providers, OpenStreetMap map tiles, Health Connect, notifications, Device diagnostics, RevenueCat, legal-page hosting, email, and support providers.
+
+The Application includes optional Google Maps features and content. Your use of these features is subject to the then-current [Google Maps/Google Earth Additional Terms of Service](https://maps.google.com/help/terms_maps/) and [Google Privacy Policy](https://policies.google.com/privacy).
 
 We do not control third-party services and are not responsible for their content, policies, availability, accuracy, security, or practices. Your use of third-party services is subject to their own terms and privacy policies.
 
