@@ -7,9 +7,9 @@ permalink: /privacy/
 
 # Privacy Policy for Waddle to Run
 
-Last updated: September 29, 2026
+Last updated: October 2, 2026
 
-Version: 2026-09-29.2
+Version: 2026-10-02.1
 
 This Privacy Policy explains how Spam Musubi Technologies LLC handles information when You use Waddle to Run. References to Waddle to Run may include the `goose-running` app, public pages, support materials, or similar names used for the Service.
 
@@ -120,7 +120,7 @@ Depending on Your Device, Apple account, iCloud, backup, and Application setting
 - Application data may be included in Device or iCloud backups.
 - Apple may process map requests, location permissions, Health data, notifications, purchase records, crash reports, performance diagnostics, and App Store analytics under Apple’s policies.
 
-We do not operate a separate server that stores Your raw GPS route history. Configured app versions use Meta advertising measurement as described below.
+We do not operate a separate server that stores Your raw GPS route history.
 
 When product analytics is enabled and the Application is configured for analytics, We use PostHog to process pseudonymous Usage Data such as Application lifecycle events, screens viewed, feature interactions, onboarding progress, purchase-funnel interactions, permission outcomes, and coarse buckets for run duration, distance, and activity counts. Analytics events may also include Device and Application metadata supplied by the analytics software, such as Application version, operating-system version, Device type, locale, and a random installation identifier.
 
@@ -130,15 +130,13 @@ RevenueCat may also deliver subscription lifecycle events, including trial start
 
 ### Advertising Measurement
 
-Waddle to Run uses Meta's SDK to measure advertising performance through app-install and activation signals and confirmed new free-trial starts. Trial events contain the subscription product identifier, zero monetary value and currency, and an identifier derived from the store transaction, together with technical app and device information processed by the SDK. Trial-start signals may be sent without authorized App Tracking Transparency permission, except in restricted states. Advertising identifier (IDFA) collection is enabled only with authorized tracking permission. The Application does not request tracking permission or require it to use the Application or purchase a subscription.
+Starting with iOS version 1.0.6 (build 12), Waddle to Run does not include Meta's SDK or send app-install, activation, trial, or purchase events to Meta. This version does not collect the advertising identifier (IDFA), link Your app activity with other companies' app or website data for advertising, or request App Tracking Transparency permission. RevenueCat's Meta integration is disabled. The Application clears advertising-attribution identifier attributes saved by earlier builds when it configures RevenueCat; synchronization requires connectivity.
 
-For Apple Ads attribution, the Application sends Apple’s AdServices attribution token to RevenueCat so eligible installs can be associated with Apple Ads campaigns and later subscription activity. Apple’s standard AdServices attribution does not require ATT authorization. Availability depends on Apple’s attribution rules.
+For Apple Ads attribution, the Application sends Apple's AdServices attribution token to RevenueCat so eligible installs can be associated with Apple Ads campaigns and later subscription activity. Apple's standard AdServices attribution does not require ATT authorization. Availability depends on Apple's attribution rules. This does not send events to Meta.
 
-When tracking permission is authorized, Waddle to Run provides RevenueCat with Meta's app-generated anonymous identifier and available advertising identifiers to match subscription activity with advertisements. When the RevenueCat Meta integration is enabled, RevenueCat may send consent-eligible paid subscription starts, trial conversions, renewals, and other purchase events, including amounts, currency, transaction identifiers, and attribution information. Server-side events can occur while the app is closed. RevenueCat and Meta also process technical app and device information under their respective policies.
+Earlier iOS versions included Meta advertising measurement. Those versions could send install and activation signals and, in configured builds, confirmed trial-start signals containing product and transaction-derived identifiers and technical app and device information. Upgrading to build 12 or later stops this app's Meta SDK event collection on that Device. It does not automatically delete information previously processed by Meta or RevenueCat. See Meta's [Privacy Policy](https://www.facebook.com/privacy/policy/) and the contact information below for requests concerning earlier information.
 
-This integration does not forward raw GPS coordinates, saved routes, HealthKit information, running goals, reflections, or our PostHog analytics event stream to Meta. The product analytics switch controls PostHog collection; it does not disable these separate advertising-measurement signals.
-
-You can review tracking permission in Your Device settings. The Application does not display a tracking-permission request. Trial measurement is separate from the product analytics switch. Reopening the app refreshes consent information shared with RevenueCat. Changing settings or deleting the Application does not automatically delete information previously processed by Meta or RevenueCat. See Meta’s [Privacy Policy](https://www.facebook.com/privacy/policy/).
+The optional PostHog product analytics and RevenueCat purchase processing described above remain separate from advertising tracking. We do not forward the PostHog event stream, raw GPS routes, or HealthKit information to advertising networks.
 
 ## How We Use Information
 
@@ -153,7 +151,7 @@ We use information for the following purposes:
 - To write completed workouts to Apple Health when You enable the feature and grant permission.
 - To process, verify, restore, or support In-app Purchases and Subscriptions.
 - To provide diagnostics, maintain reliability, prevent fraud, and improve the Service.
-- To measure advertising performance through the limited app and purchase signals described above.
+- To understand Apple Ads campaign performance using the attribution information described above.
 - To respond to support requests.
 - To comply with legal obligations and enforce Our Terms.
 - To protect the rights, safety, and security of users, the Company, and others.
@@ -172,7 +170,7 @@ We may share information in the following situations:
 
 - **With Apple:** Apple may process information related to app distribution, purchases, iCloud and CloudKit, maps, location services, HealthKit, local notifications, Device backups, diagnostics, and App Store analytics.
 - **With RevenueCat:** RevenueCat helps Us manage purchases, Subscriptions, offerings, entitlements, purchase restoration, and related diagnostics.
-- **With Meta:** Meta processes app-install, activation, and trial-start signals; RevenueCat may send consent-eligible purchase and subscription events as described under Advertising Measurement.
+- **Earlier Meta measurement:** Earlier versions shared advertising-measurement information with Meta as described above. Starting with iOS 1.0.6 (build 12), the Application no longer sends these events.
 - **With PostHog:** PostHog helps Us understand pseudonymous Application usage, conversion funnels, feature adoption, and retention so We can improve the Service. RevenueCat may send purchase and Subscription lifecycle events to the same pseudonymous analytics profile when that integration is enabled.
 - **With Cloudflare:** Cloudflare hosts Our subscription analytics relay and processes incoming RevenueCat webhooks to forward eligible events to PostHog as described above.
 - **At Your direction:** When You choose to share a route postcard or other content, information is sent to the destination You select through the iOS share sheet.
@@ -182,7 +180,7 @@ We may share information in the following situations:
 - **For business transfers:** Information may be transferred in connection with a merger, acquisition, financing, reorganization, sale of assets, or similar business transaction.
 - **With Your consent:** We may share information for another purpose if You consent.
 
-We do not sell Personal Data for money. Advertising-measurement sharing with Meta may be considered sharing for cross-context behavioral advertising under applicable law. Contact Us about applicable opt-out rights using the contact details below.
+We do not sell Personal Data for money. Starting with iOS 1.0.6 (build 12), We do not share app activity for cross-context behavioral advertising. Earlier advertising-measurement sharing with Meta may have been considered such sharing under applicable law. Contact Us about applicable rights using the contact details below.
 
 ## Retention
 
@@ -196,7 +194,7 @@ Support messages and related correspondence may be retained as long as needed to
 
 Purchase and entitlement records are retained by the Application Store and RevenueCat according to their policies and as needed to provide the Service, restore purchases, comply with law, and prevent fraud.
 
-Advertising-measurement records are processed and retained by Meta and RevenueCat under their policies and as needed to provide their services. You can contact Us to request access, correction, or deletion of advertising-measurement information associated with Your use of the Application.
+Previously collected Meta advertising-measurement records and Apple Ads attribution records may remain with the respective providers under their retention policies. You can contact Us to request access, correction, or deletion of advertising-measurement information associated with Your use of the Application.
 
 Pseudonymous analytics events are retained in PostHog according to Our configured retention settings and as needed to analyze and improve the Service, maintain security, and comply with law.
 
