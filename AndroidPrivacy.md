@@ -7,7 +7,7 @@ permalink: /android/privacy/
 
 # Privacy Policy — Waddle: Beginner Running Coach for Android
 
-Last updated: September 9, 2026. Version: android-2026-09-09.1.
+Last updated: October 2, 2026. Version: android-2026-10-02.1.
 
 Spam Musubi Technologies LLC provides Waddle: Beginner Running Coach (also called Waddle). This policy describes the Android application, package `com.spammusubi.gooserunning`. The company can be contacted at contact@spammusubitech.com or 3400 Cottage Way, Ste G2 #11929, Sacramento, California 95825, United States.
 
@@ -27,7 +27,9 @@ The Android app does not upload raw location, routes, fitness profiles, moods, o
 
 ## Street maps and place searches
 
-Street maps load only when you choose to load a map or open a street-map view. OpenStreetMap receives your IP address, the requested map tile areas, and an application-identifying user agent. Requested areas can reveal the approximate location you are viewing. Waddle caches map tiles on your device and does not upload your drawn route, notes, mood, or fitness profile to OpenStreetMap. Map imagery is provided by OpenStreetMap contributors under its attribution requirements; see the [OpenStreetMap Foundation privacy policy](https://osmfoundation.org/wiki/Privacy_Policy).
+Interactive street maps load only when you choose to load a map or open a street-map view. Google Maps receives your IP address and requested map areas, which can reveal the approximate or precise location being viewed. Its Android SDK also collects device and SDK metadata, a pseudonymous Maps SDK identifier, crash diagnostics, and map interaction events such as panning and zooming to maintain and improve Google services. See [Google's Privacy Policy](https://policies.google.com/privacy). Waddle does not enable Google's location layer or send recorded route polylines to a Google routing API. Routes are drawn locally over the map.
+
+Default stylized postcards and replay videos draw your privacy-filtered route on the device and do not request map imagery. If you explicitly turn on a street map for a postcard, OpenStreetMap receives your IP address, requested map tile areas, and an application-identifying user agent. Waddle caches these tiles on your device. The postcard preview and exports use the same privacy-filtered map; simplified and hidden route modes exclude map imagery. Waddle does not upload your route polyline, notes, mood, or fitness profile to OpenStreetMap. See the [OpenStreetMap Foundation privacy policy](https://osmfoundation.org/wiki/Privacy_Policy). OpenStreetMap attribution remains on exported street maps.
 
 When you search for a place, the search text is sent to the geocoding provider available through your Android device. Its handling is subject to that provider’s terms and privacy policy. Search is optional; you can move the map manually. Drawn distances are estimates along your drawing, not road routing or safety advice.
 
