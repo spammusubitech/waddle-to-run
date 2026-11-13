@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="referrer" content="no-referrer">
+  <meta name="apple-itunes-app" content="app-id=6790197561">
+  <meta name="description" content="A little company goes a long way. Join your friend in Waddle and make everyday movement a shared adventure.">
+  <title>A little company · Waddle</title>
+  <style>
+    :root{color-scheme:light;--ink:#214633;--muted:#58695d;--paper:#f7f6ed;--green:#347858;--mint:#e3efdf}
+    *{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font:17px/1.55 -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
+    a{color:inherit}button,a{touch-action:manipulation}a:focus-visible,button:focus-visible,textarea:focus-visible{outline:3px solid #ad6200;outline-offset:5px}
+    header,main,footer{max-width:1020px;margin:auto;padding:26px 28px}header{display:flex;align-items:center;justify-content:space-between}.wordmark{font-size:24px;font-weight:850;letter-spacing:-1px;text-decoration:none}.eyebrow{font-size:12px;font-weight:750;letter-spacing:2px;text-transform:uppercase;color:var(--muted)}
+    main{padding-top:38px;display:grid;grid-template-columns:1.1fr 1fr;gap:60px;align-items:center}.portraits{display:flex;padding-bottom:18px}.portrait{position:relative;width:92px;height:92px;overflow:hidden;border:4px solid var(--paper);border-radius:50%;background:var(--mint)}.portrait+ .portrait{margin-left:-12px;background:#f2dfc6}.portrait img{position:absolute;left:50%;top:50%;width:220%;height:220%;max-width:none;object-fit:contain;transform:translate(-50%,-50%) translate(-25px,55px)}.portrait.raccoon img{width:175%;height:175%;transform:translate(-50%,-50%) translate(-27px,15px)}
+    h1{font-size:clamp(36px,5vw,54px);line-height:1.08;letter-spacing:-2px;margin:10px 0 22px;font-weight:850;overflow-wrap:anywhere}p{color:var(--muted);margin:0 0 20px}.lead{font-size:19px}.invite-label{font-weight:750;color:var(--green);overflow-wrap:anywhere}.card{background:#fff;border-radius:30px;padding:30px;box-shadow:0 7px 0 #d6e5d2}.card h2{font-size:23px;letter-spacing:-.5px;margin:0 0 10px}.actions{display:grid;gap:12px;margin:24px 0 18px}.button{display:block;width:100%;border:0;border-radius:18px;background:var(--green);color:white;text-decoration:none;text-align:center;font:inherit;font-weight:750;padding:16px 18px;cursor:pointer}.button.secondary{background:var(--mint);color:var(--ink)}.small{font-size:14px;line-height:1.6}.copy{font:inherit;font-size:14px;font-weight:650;border:0;background:transparent;text-decoration:underline;color:var(--green);padding:8px 0;cursor:pointer}.gift{display:flex;align-items:center;gap:18px;padding-top:26px;margin-top:26px;border-top:1px solid #e0e7df}.gift img{width:92px;height:90px;object-fit:contain}.gift strong{display:block;margin-bottom:4px}.gift p{margin:0}.steps{padding-left:22px;margin:16px 0 0;color:var(--muted);font-size:14px}.steps li{margin:9px 0}.status{color:#87451f;font-size:14px}.fallback{width:100%;min-height:90px;font:14px/1.5 monospace;padding:12px;border:1px solid #cad8cc;border-radius:12px;overflow-wrap:anywhere}footer{margin-top:42px;padding-bottom:36px;font-size:12px;color:var(--muted);display:flex;justify-content:space-between;gap:20px}footer nav{display:flex;gap:18px}[hidden]{display:none!important}
+    @media(max-width:700px){header,main,footer{padding-left:22px;padding-right:22px}main{padding-top:12px;grid-template-columns:1fr;gap:24px}.portraits{padding-bottom:4px}h1{max-width:420px}.card{padding:24px}.lead{font-size:17px}footer{margin-top:20px;flex-direction:column}.eyebrow{font-size:10px;letter-spacing:1px}}
+    @media(prefers-reduced-motion:no-preference){.button{transition:transform .16s,filter .16s}.button:hover{transform:translateY(-2px);filter:brightness(1.05)}}
+  </style>
+</head>
+<body>
+  <header><a class="wordmark" href="../">Waddle.</a><span class="eyebrow">Good company. Little adventures.</span></header>
+  <main>
+    <section aria-labelledby="heading">
+      <div class="portraits" aria-hidden="true"><div class="portrait"><img src="assets/goose.png" alt="" width="320" height="320"></div><div class="portrait raccoon"><img src="assets/raccoon.png" alt="" width="320" height="320"></div></div>
+      <div class="invite-label" id="inviter">Your flock is waiting</div>
+      <h1 id="heading">A little company goes a long way.</h1>
+      <p class="lead">Meet your walking buddy. Make them your own. Bring your people along for the little victories.</p>
+      <p>Choose a mascot, create a cozy home, and show your friends what you've earned.</p>
+    </section>
+    <section class="card" aria-labelledby="join-title">
+      <h2 id="join-title">Come walk with us.</h2>
+      <p class="small" id="intro">Get Waddle for iPhone, then exchange invites from the Friends tab.</p>
+      <p id="invalid" class="status" role="status" hidden>This invite couldn't be read. Ask your friend to copy a fresh invite from Waddle. You can still get the app below.</p>
+      <div class="actions">
+        <a class="button" id="download" href="https://apps.apple.com/app/id6790197561" rel="noreferrer">Get Waddle</a>
+        <a class="button secondary" id="open-app" hidden>Open in Waddle</a>
+      </div>
+      <div id="invite-help" hidden>
+        <ol class="steps"><li>Install Waddle and finish setting up.</li><li>Return to this invite and tap <strong>Open in Waddle</strong>.</li><li>Tap <strong>Add friend</strong>, then send your invite back so you can see each other.</li></ol>
+        <button class="copy" id="copy" type="button">Copy invite instead</button>
+        <p class="small" id="copy-status" role="status" aria-live="polite"></p>
+        <label class="small" id="fallback-label" for="fallback" hidden>Copy this link and paste it into Waddle → Friends → Add friends.</label>
+        <textarea class="fallback" id="fallback" readonly hidden></textarea>
+        <p class="small">An iCloud account is needed to connect. Keep your invite between people you trust: anyone with the link can access your shared profile. Installing alone doesn't add a friend or earn a gift.</p>
+      </div>
+      <div class="gift"><img src="assets/picnic.png" alt="A picnic blanket and basket" width="184" height="180"><div><strong>Good company comes with gifts.</strong><p class="small">Exchange invites and refresh Friends to earn a picnic decoration together. More mutual friends unlock more gifts. No purchase needed; gifts are also earnable through your own movement.</p></div></div>
+      <noscript><p class="small">Turn on JavaScript to open your friend invite, or copy the full link from your address bar and paste it into Waddle → Friends → Add friends.</p></noscript>
+    </section>
+  </main>
+  <footer><span>Small steps. A world of your own.</span><nav aria-label="Legal"><a href="../privacy/">Privacy</a><a href="../terms/">Terms</a></nav></footer>
+  <script>
+    (() => {
+      const get = id => document.getElementById(id);
+      let inviteURL = '';
+      function render() {
+        inviteURL = '';
+        for (const id of ['open-app','invite-help','invalid','fallback','fallback-label']) get(id).hidden = true;
+        get('open-app').removeAttribute('href'); get('copy-status').textContent = ''; get('fallback').value = '';
+        get('inviter').textContent = 'Your flock is waiting';
+        get('intro').textContent = 'Get Waddle for iPhone, then exchange invites from the Friends tab.';
+        if (!location.hash) return;
+        try {
+          if (new TextEncoder().encode(location.href).length > 8192 || /%(?![0-9a-f]{2})/i.test(location.hash) || location.search) throw Error();
+          const fields = new URLSearchParams(location.hash.slice(1));
+          if (fields.getAll('share').length !== 1 || fields.getAll('name').length > 1) throw Error();
+          const raw = fields.get('share');
+          // Inspect the authority too: URL normalizes away an explicit :443 port.
+          if (!/^https:\/\/(www\.)?icloud\.com\/share\//.test(raw)) throw Error();
+          const share = new URL(raw);
+          if (share.protocol !== 'https:' || !['www.icloud.com','icloud.com'].includes(share.hostname) || share.username || share.password || share.port || !share.pathname.startsWith('/share/') || share.pathname.length <= 7) throw Error();
+          const name = Array.from((fields.get('name') || '').replace(/\s+/gu,' ').replace(/[\u0000-\u001f\u007f-\u009f]/g,'').trim()).slice(0,30).join('');
+          const fragment = 'share=' + encodeURIComponent(raw) + (name ? '&name=' + encodeURIComponent(name) : '');
+          inviteURL = 'https://spammusubitech.github.io/waddle-to-run/join/#' + fragment;
+          get('open-app').href = 'waddle-to-run://friend#' + fragment;
+          get('open-app').hidden = false; get('invite-help').hidden = false;
+          if (name) get('inviter').textContent = name + ' invited you';
+          get('intro').textContent = 'Already have Waddle? Open your invite below. New here? Install first, then come back to this page.';
+        } catch { get('invalid').hidden = false; }
+      }
+      get('copy').addEventListener('click', async () => {
+        if (!inviteURL) return;
+        try { await navigator.clipboard.writeText(inviteURL); get('copy-status').textContent = 'Invite copied. Paste it into Waddle → Friends → Add friends.'; }
+        catch { get('fallback-label').hidden = false; get('fallback').hidden = false; get('fallback').value = inviteURL; get('fallback').focus(); get('fallback').select(); get('copy-status').textContent = 'Select and copy the invite below.'; }
+      });
+      addEventListener('hashchange', render); render();
+    })();
+  </script>
+</body>
+</html>
