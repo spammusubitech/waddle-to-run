@@ -7,9 +7,9 @@ permalink: /terms/
 
 # Terms and Conditions for Waddle to Run
 
-Last updated: August 5, 2026
+Last updated: November 14, 2026
 
-Version: 2026-08-05.4
+Version: 2026-11-14.1
 
 Please read these Terms and Conditions carefully before using Waddle to Run. References to Waddle to Run may include the `goose-running` app, public pages, support materials, or similar names used for the Service.
 
@@ -45,11 +45,21 @@ Your use of the Service is also subject to Our [Privacy Policy](https://spammusu
 
 ## The Service
 
-Waddle to Run is a beginner-friendly walking and running app. It may provide onboarding, adaptive training plans, scheduled runs, run-walk intervals, GPS route tracking, pace and distance estimates, automatic pause detection, planned routes, route cards, route postcards, reminders, audio and haptic cues, run reflections, progress summaries, streaks, badges, goose customization, iCloud sync, optional Apple Health workout saving, and Subscription-based premium features.
+Waddle to Run is a beginner-friendly walking and running app. It may provide onboarding, adaptive training plans, scheduled runs, run-walk intervals, GPS route tracking, pace and distance estimates, automatic pause detection, planned routes, route cards, route postcards, reminders, audio and haptic cues, run reflections, progress summaries, streaks, badges, mascot and home customization, optional Friends leaderboards, iCloud preference sync, optional Apple Health workout saving, and Subscription-based premium features.
 
 Features may vary by Device, operating system, country, Application Store configuration, permission choices, Subscription state, iCloud availability, GPS conditions, and Application version.
 
 The Service may change, add, remove, limit, or discontinue features. We do not guarantee that a particular plan, badge, route style, price, Subscription feature, or other function will remain available.
+
+## Friends accounts and sharing
+
+Friends is optional and requires Sign in with Apple or Google. You choose a display name and portrait and decide which daily totals to share with accepted friends. Linking a second sign-in method while signed in provides access to the same Friends account; it does not merge separate existing accounts, transfer App Store ownership or upload private workout history. You are responsible for maintaining access to a connected sign-in method.
+
+Use only names and images You have permission to use. Do not impersonate others, harass users, submit unlawful content or manipulate activity totals, invitations or offer eligibility. Friends and leaderboards support motivation and entertainment; they are not medical advice or a reason to exceed Your safe limits. Totals may be delayed, incomplete or affected by permissions and measurement differences.
+
+You may revoke invitations, remove friends, change sharing choices, export Friends data or delete Your Friends account in Account & sharing. Changes that remove shared server data require connectivity. Signing out alone does not remove information already shared. Account deletion does not delete local walks, delete Your Apple or Google account, or cancel an App Store subscription. Recipients may retain information they previously saw or saved.
+
+Mascots, portraits, scenes and items can become available through the progress requirements shown in the app. Cosmetic rewards have no cash value. Any subscription offer is optional, subject to the displayed campaign conditions, availability and Apple's eligibility rules, and is not guaranteed merely by sharing a link. We do not require reviews or ratings to receive rewards. See the Privacy Policy for storage, retention and consent details.
 
 ## Important Fitness and Health Notice — Not Medical Advice
 
@@ -183,7 +193,7 @@ The Company’s names, marks, graphics, characters, and trade dress may not be u
 
 ## Third-party Services
 
-The Service may rely on or link to third-party services, including Apple Application Store services, Core Location, MapKit, HealthKit, iCloud, CloudKit, notifications, Device diagnostics, RevenueCat, legal-page hosting, email, and support providers.
+The Service may rely on or link to third-party services, including Apple Application Store services, Core Location, MapKit, HealthKit, iCloud, CloudKit, notifications, Device diagnostics, Google sign-in, Supabase Friends hosting, RevenueCat, legal-page hosting, email, and support providers.
 
 We do not control third-party services and are not responsible for their content, policies, availability, accuracy, security, or practices. Your use of third-party services is subject to their own terms and privacy policies.
 
