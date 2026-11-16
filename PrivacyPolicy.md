@@ -7,9 +7,9 @@ permalink: /privacy/
 
 # Privacy Policy for Waddle to Run
 
-Last updated: November 15, 2026
+Last updated: November 16, 2026
 
-Version: 2026-11-15.2
+Version: 2026-11-16.1
 
 This Privacy Policy explains how Spam Musubi Technologies LLC handles information when You use Waddle to Run. References to Waddle to Run may include the `goose-running` app, public pages, support materials, or similar names used for the Service.
 
@@ -118,8 +118,10 @@ The Application uses Apple frameworks and services, including SwiftData, iCloud 
 
 Depending on Your Device, Apple account, iCloud, backup, and Application settings:
 
-- Basic preferences, such as the selected mascot and distance-display preferences where supported, may use iCloud. This version stops CloudKit syncing of the local fitness store and fitness-derived reward preferences. Existing records uploaded by older versions remain in iCloud until separately removed.
-- The Application Support and Preferences directories containing activity and progress are excluded from device backups. This does not remove copies already in backups made by older versions.
+- In iOS version 1.0.9 (build 16), Waddle can synchronize saved sessions, routes, plans, missions, outfits, settings and agreement records through Your private CloudKit database when iCloud is available.
+- In the version that introduces Friends, those records are stored on Your Device. That version stops CloudKit mirroring for the shared store containing them. An update keeps records already on Your Device. It does not download records that exist only in iCloud, delete existing iCloud copies, or transfer them to Supabase.
+- Both versions can synchronize basic preferences through Apple’s iCloud key-value service, including auto-pause and postcard preferences. The Friends version also synchronizes the selected mascot through this service.
+- In the Friends version, the Application Support and Preferences directories containing activity and progress are excluded from device backups. This does not remove copies already in backups made by older versions.
 - Apple may process map requests, location permissions, Health data, notifications, purchase records, crash reports, performance diagnostics, and App Store analytics under Apple’s policies.
 
 We do not operate a separate server that stores Your raw GPS route history.
@@ -161,13 +163,15 @@ We use information for the following purposes:
 
 ## How Information Is Stored
 
-Plans, scheduled runs, routes, run history, progress, reflections, preferences, and settings are primarily stored using storage provided by iOS on Your Device. This version keeps that fitness store local. Supabase is used for Friends, not as a replacement for the personal fitness store or ordinary iCloud preferences. Existing copies synced by older versions are not automatically moved to Supabase or deleted.
+Plans, scheduled runs, routes, run history, progress, reflections, preferences, and settings are primarily stored using storage provided by iOS on Your Device. Version 1.0.9 can also mirror these records through Your private iCloud database. The Friends version keeps this store local and uses Supabase for the social features described below.
 
 We do not have Your Apple ID password and generally cannot directly access information stored only on Your Device or in Your private iCloud database.
 
 Apple Health workouts are stored in HealthKit. Purchase and entitlement records are handled by Apple and RevenueCat. Support correspondence is stored through the communication service You use to contact Us and Our business systems.
 
 ## Friends and daily movement
+
+This section applies to versions that include the Friends tab. Version 1.0.9 does not include Friends.
 
 Friends requires Sign in with Apple or Google; walking, running, local customization and purchases remain available without a Friends account. We use a stable account identifier and provider identity records, never Your Apple or Google password. Google sign-in supplies basic identity information, which may include Your email address, verified-email status, account name and profile-image URL. Supabase Auth may retain these values as account metadata. We do not request access to Gmail, contacts, calendars, Google Drive or Google Fit. Your Friends display name and portrait are chosen separately; Your provider email and account metadata are not included in friend profiles or leaderboard responses. Supabase stores Your social profile and authenticates Your account in our US West project. Sessions are stored in this device's Keychain and do not sync through iCloud Keychain.
 
@@ -208,7 +212,7 @@ We do not sell Personal Data for money. Starting with iOS 1.0.6 (build 12), We d
 
 Local information remains on Your Device until You remove it through available controls or delete the Application. Supabase Friends data follows the controls and retention described above. Older iCloud copies remain subject to Apple’s storage controls.
 
-Deleting a run or planned route through the Application removes it from the active local store. It does not automatically delete an older CloudKit copy. Copies may remain temporarily in backups, caches, or Apple systems according to Apple’s retention practices.
+Deleting a run or planned route in the Friends version removes it from the active local store. It does not automatically delete an older CloudKit copy. Copies may remain temporarily in backups, caches, or Apple systems according to Apple’s retention practices.
 
 Apple Health workouts remain in Apple Health until You delete them there. Deleting a run from Waddle to Run does not necessarily delete a workout previously saved to Apple Health.
 
