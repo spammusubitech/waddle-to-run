@@ -9,11 +9,11 @@ permalink: /privacy/
 
 Last updated: November 16, 2026
 
-Version: 2026-11-16.2
+Version: 2026-11-16.3
 
 This Privacy Policy explains how Spam Musubi Technologies LLC handles information when You use Waddle to Run. References to Waddle to Run may include the `goose-running` app, public pages, support materials, or similar names used for the Service.
 
-Waddle to Run helps people begin or return to walking and running with adaptive plans, GPS run tracking, route cards, reminders, progress, and a playful goose companion. Walks, routes, plans and progress are stored on Your Device. Friends is optional and uses Sign in with Apple or Google and a private Supabase backend; You choose which daily totals to share.
+Waddle to Run helps people begin or return to walking and running with adaptive plans, GPS run tracking, route cards, reminders, progress, and a playful goose companion. Walks, routes, plans and progress are stored on Your Device. Starting in iOS version 1.1, You can sign in and enable private library sync across devices. Friends has separate controls for the daily totals You choose to share.
 
 ## Interpretation and Definitions
 
@@ -52,7 +52,7 @@ Depending on the features You use, You may provide:
 - Support messages, email address, and other contact details if You contact Us.
 - Purchase-related choices, such as which Subscription You select, as processed through the Application Store and Our purchase provider.
 
-You can walk, run and use local progression without a Waddle account. An account is required only for Friends and related social features.
+You can walk, run and use local progression without a Waddle account. An account is required for private library sync and Friends. Each feature has its own setup.
 
 ### Location, Route, and Run Information
 
@@ -118,13 +118,11 @@ The Application uses Apple frameworks and services, including SwiftData, iCloud 
 
 Depending on Your Device, Apple account, iCloud, backup, and Application settings:
 
-- In iOS version 1.0.9 (build 16) and the version that introduces Friends, Waddle can synchronize saved walks and runs, recorded and planned routes, plans, missions, outfits, settings and agreement records through Your existing private iCloud database. Saved sessions can include Your distance, pace, route, and any feeling or note You add.
-- Friends uses a separate account. Joining Friends does not transfer Your private iCloud records to Supabase. You choose whether to share daily totals with accepted friends.
-- Both versions can synchronize basic preferences through Apple’s iCloud key-value service, including auto-pause and postcard preferences. The Friends version also synchronizes the selected mascot through this service.
-- The existing saved walks, plans and ordinary settings remain eligible for device backups under Your Apple settings. The Friends version keeps its daily step cache, dated reward history, cached Friends profile, pending invitation and device sharing choices in a separate directory excluded from backups.
+- Version 1.0.9 (build 16) can synchronize saved sessions, GPS trails, notes, routes, plans, missions, outfits, settings and agreement records through Your private iCloud database. It can also synchronize basic preferences with Apple’s iCloud key-value service.
+- Version 1.1 opens the same local database after an update, including offline. It excludes Waddle’s activity database and app preferences from new device backups. It can recover earlier iCloud records and import missing ordinary preferences. An older installed version can still write to iCloud. Updating does not erase earlier iCloud records or device backups.
 - Apple may process map requests, location permissions, Health data, notifications, purchase records, crash reports, performance diagnostics, and App Store analytics under Apple’s policies.
 
-We do not operate a separate server that stores Your raw GPS route history.
+If You enable private library sync in version 1.1, Our Supabase database stores full GPS histories as described below.
 
 When product analytics is enabled and the Application is configured for analytics, We use PostHog to process pseudonymous Usage Data such as Application lifecycle events, screens viewed, feature interactions, onboarding progress, purchase-funnel interactions, permission outcomes, and coarse buckets for run duration, distance, and activity counts. Analytics events may also include Device and Application metadata supplied by the analytics software, such as Application version, operating-system version, Device type, locale, and a random installation identifier.
 
@@ -150,10 +148,10 @@ We use information for the following purposes:
 - To create and adapt beginner-friendly walking and running plans.
 - To track active runs and walks, calculate distance and pace, detect pauses, save routes, and show run history.
 - To create route cards, progress summaries, badges, goose customization, and user-initiated share images.
-- To save plans, routes, runs and progress on Your Device and synchronize supported records and preferences through Your private iCloud account.
+- To save plans, routes, runs and progress on Your Device and provide the optional private sync service selected for Your Application version.
 - To schedule and deliver local run reminders and provide audio or haptic cues.
 - To write completed workouts to Apple Health when You enable the feature and grant permission.
-- To read daily step totals from Apple Health or Motion & Fitness when You choose, show daily movement, and award permanent buddy and home rewards. The dated step and reward ledgers stay in protected local storage. Friends can share the daily totals You enable and earned badge identifiers as described below.
+- To read daily step totals from Apple Health or Motion & Fitness when You choose, show daily movement, and award permanent buddy and home rewards. The dated step ledger stays in protected local storage. Private sync can include earned daily rewards. Friends can share the daily totals You enable and earned badge identifiers as described below.
 - To process, verify, restore, or support In-app Purchases and Subscriptions.
 - To provide diagnostics, maintain reliability, prevent fraud, and improve the Service.
 - To understand Apple Ads campaign performance using the attribution information described above.
@@ -163,11 +161,19 @@ We use information for the following purposes:
 
 ## How Information Is Stored
 
-Plans, scheduled runs, routes, run history, progress, reflections, preferences, and settings are primarily stored using storage provided by iOS on Your Device. Version 1.0.9 and the Friends version can mirror the saved sessions, plans, outfits and other records listed above through Your private iCloud database. The new social features use Supabase as described below.
+Plans, scheduled runs, routes, run history, progress, reflections, preferences, and settings are primarily stored using storage provided by iOS on Your Device. Version 1.0.9 can mirror these records through Your private iCloud database.
 
 We do not have Your Apple ID password and generally cannot directly access information stored only on Your Device or in Your private iCloud database.
 
 Apple Health workouts are stored in HealthKit. Purchase and entitlement records are handled by Apple and RevenueCat. Support correspondence is stored through the communication service You use to contact Us and Our business systems.
+
+### Optional private library sync in version 1.1
+
+After You sign in with Apple or Google, Settings → Private library asks for permission to upload and restore Your library. Waddle stores it under Your account in Our Supabase US West project. This includes saved workouts and calorie estimates, full recorded and planned GPS routes, optional feelings, moods and notes, plans and missions, game progress and dated rewards, outfits and scene choices, ordinary settings and agreement receipts. The service uses these records to save and restore Your library. Friends cannot access them through the leaderboard or a friend profile.
+
+Recover earlier iCloud records in Private library can bring older history onto this device. If private sync is enabled, recovered records also sync to Your account. Conflicting versions may be saved locally for export. Apple Health sample records, daily step history, device permissions and sign-in tokens are outside private library sync.
+
+You can pause uploads and downloads on a device and export Your synced library. Pausing or signing out keeps existing server records. Deleting synced records propagates when sync runs. Deleting Your Waddle account removes the active server library and Friends data. Managed database backups can retain prior copies during the seven-day recovery window. You manage earlier iCloud copies separately through Apple.
 
 ## Friends and daily movement
 
@@ -187,12 +193,13 @@ You can report or block a profile from a friend’s profile or an invitation pre
 
 Friendship gifts use unique accepted connections. Optional subscription offers use server-managed account eligibility, invitation attribution, general app-presence days and a limited code inventory; Health and fitness values are not used to qualify someone for a monetary benefit. Offer campaigns remain unavailable until configured with actual App Store codes and verified eligibility. Stable opaque account IDs may be sent to RevenueCat to connect purchase access to the signed-in account. Apple and RevenueCat determine transaction and offer eligibility.
 
-Account & sharing includes export, sign out and account deletion. Signing out does not stop existing sharing. Deleting an account removes its profile, daily totals, invitations, friendships, blocks and related reports; it does not cancel an App Store subscription or delete locally saved walks. Apple token revocation is attempted when configured and available; if it cannot be completed, the app explains how to remove Waddle under Settings → Apple Account → Sign in with Apple. Deletion still proceeds. Google users confirm the same connected account before deletion; the app also links to Google Account connections so You can remove Waddle’s Google authorization. Deleting a Waddle account does not delete Your Apple or Google account. Operational provider backups may retain deleted data for their configured retention period and are not used to restore active sharing.
+Account & sharing includes export, sign out and account deletion. Signing out does not stop existing sharing. Deleting an account removes its private cloud library, profile, daily totals, invitations, friendships, blocks and related reports; it does not cancel an App Store subscription or delete locally saved walks. Apple token revocation is attempted when configured and available; if it cannot be completed, the app explains how to remove Waddle under Settings → Apple Account → Sign in with Apple. Deletion still proceeds. Google users confirm the same connected account before deletion; the app also links to Google Account connections so You can remove Waddle’s Google authorization. Deleting a Waddle account does not delete Your Apple or Google account. Operational provider backups may retain deleted data for their configured retention period and are not used to restore active sharing.
 
 ## Sharing of Information
 
 We may share information in the following situations:
 
+- **With Supabase:** Supabase provides account authentication, database hosting and recovery backups for private sync and Friends.
 - **With Apple:** Apple may process information related to app distribution, purchases, iCloud and CloudKit, maps, location services, HealthKit, local notifications, Device backups, diagnostics, and App Store analytics.
 - **With Google, if selected:** Google authenticates Your sign-in and handles the sign-in interaction under its [Privacy Policy](https://policies.google.com/privacy). Basic identity information is passed to Supabase Auth. We do not send Your Waddle fitness totals, routes or private notes to Google as part of sign-in.
 - **With RevenueCat:** RevenueCat helps Us manage purchases, Subscriptions, offerings, entitlements, purchase restoration, and related diagnostics.
@@ -210,9 +217,9 @@ We do not sell Personal Data for money. Starting with iOS 1.0.6 (build 12), We d
 
 ## Retention
 
-Local information remains on Your Device until You remove it through available controls or delete the Application. Supabase Friends data follows the controls and retention described above. Your private iCloud copies remain subject to Apple’s storage controls.
+Local information remains on Your Device until You remove it through available controls or delete the Application. Supabase library and Friends data follow their respective controls and retention described above. Your private iCloud copies remain subject to Apple’s storage controls.
 
-Deleting a run or planned route removes it from the active store. That deletion can synchronize to Your private iCloud database and other devices when iCloud is available. Copies may remain temporarily in backups, caches, or Apple systems according to Apple’s retention practices.
+Deleting a run or planned route removes it from the active store. That deletion can synchronize through iCloud in 1.0.9 or through Your connected private library in 1.1. Copies may remain temporarily in backups, caches, or Apple systems according to Apple’s retention practices.
 
 Apple Health workouts remain in Apple Health until You delete them there. Deleting a run from Waddle to Run does not necessarily delete a workout previously saved to Apple Health.
 
@@ -224,7 +231,7 @@ Previously collected Meta advertising-measurement records and Apple Ads attribut
 
 Pseudonymous analytics events are retained in PostHog according to Our configured retention settings and as needed to analyze and improve the Service, maintain security, and comply with law.
 
-Eligibility and legal-acknowledgment records may be retained on Your Device and in Your private iCloud database for as long as reasonably necessary to document the agreement You accepted, comply with law, and resolve disputes. Deleting the Application may not delete a record that remains in iCloud or a Device backup.
+Eligibility and legal-acknowledgment records may be retained on Your Device and, if synced, in Your private library (iCloud in older versions) for as long as reasonably necessary to document the agreement You accepted, comply with law, and resolve disputes. Deleting the Application may not delete a record that remains in iCloud or a Device backup.
 
 ## Your Choices and Deleting Information
 
