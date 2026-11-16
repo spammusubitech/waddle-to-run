@@ -6,7 +6,7 @@
   <meta name="referrer" content="no-referrer">
   <meta name="apple-itunes-app" content="app-id=6790197561">
   <meta name="description" content="A little company goes a long way. Join your friend in Waddle and make everyday movement a shared adventure.">
-  <title>A little company · Waddle</title>
+  <title>Join a friend · Waddle</title>
   <style>
     :root{color-scheme:light;--ink:#214633;--muted:#58695d;--paper:#f7f6ed;--green:#347858;--mint:#e3efdf}
     *{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font:17px/1.55 -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
@@ -19,36 +19,35 @@
   </style>
 </head>
 <body>
-  <header><a class="wordmark" href="../">Waddle.</a><span class="eyebrow">Good company. Little adventures.</span></header>
+  <header><a class="wordmark" href="../">Waddle.</a></header>
   <main>
     <section aria-labelledby="heading">
       <div class="portraits" aria-hidden="true"><div class="portrait"><img src="assets/goose.png" alt="" width="320" height="320"></div><div class="portrait raccoon"><img src="assets/raccoon.png" alt="" width="320" height="320"></div></div>
-      <div class="invite-label" id="inviter">Your flock is waiting</div>
-      <h1 id="heading">A little company goes a long way.</h1>
-      <p class="lead">Meet your walking buddy. Make them your own. Bring your people along for the little victories.</p>
-      <p>Choose a mascot, create a cozy home, and show your friends what you've earned.</p>
+      <h1 id="heading"><span id="inviter">Join a friend on Waddle</span></h1>
+      <p class="lead">Walk together on the Friends leaderboard. You choose whether to share steps, distance or active minutes.</p>
+      <p>Your friends can see your portrait, walking rank and earned badges.</p>
     </section>
     <section class="card" aria-labelledby="join-title">
-      <h2 id="join-title">Come walk with us.</h2>
-      <p class="small" id="intro">Get Waddle for iPhone, then exchange invites from the Friends tab.</p>
+      <h2 id="join-title">Accept your invitation</h2>
+      <p class="small" id="intro">Get Waddle for iPhone, then accept your invitation in Friends.</p>
       <p id="invalid" class="status" role="status" hidden>This invite couldn't be read. Ask your friend to copy a fresh invite from Waddle. You can still get the app below.</p>
       <div class="actions">
         <a class="button" id="download" href="https://apps.apple.com/app/id6790197561" rel="noreferrer">Get Waddle</a>
         <a class="button secondary" id="open-app" hidden>Open in Waddle</a>
       </div>
       <div id="invite-help" hidden>
-        <ol class="steps"><li>Install Waddle and finish setting up.</li><li>Return to this invite and tap <strong>Open in Waddle</strong>.</li><li>Tap <strong>Add friend</strong>, then send your invite back so you can see each other.</li></ol>
+        <ol class="steps"><li>Install Waddle and finish setting up.</li><li>Return to this invite and tap <strong>Open in Waddle</strong>.</li><li>Sign in with Apple or Google, choose what to share, and tap <strong>Accept invitation</strong> to connect both ways.</li></ol>
         <button class="copy" id="copy" type="button">Copy invite instead</button>
         <p class="small" id="copy-status" role="status" aria-live="polite"></p>
         <label class="small" id="fallback-label" for="fallback" hidden>Copy this link and paste it into Waddle → Friends → Add friends.</label>
         <textarea class="fallback" id="fallback" readonly hidden></textarea>
-        <p class="small">An iCloud account is needed to connect. Keep your invite between people you trust: anyone with the link can access your shared profile. Installing alone doesn't add a friend or earn a gift.</p>
+        <p class="small">Sign in is only needed for Friends. Your full profile and chosen totals are visible only after connecting. Invitations expire after 7 days. Installing alone doesn't add a friend or earn a gift.</p>
       </div>
-      <div class="gift"><img src="assets/picnic.png" alt="A picnic blanket and basket" width="184" height="180"><div><strong>Good company comes with gifts.</strong><p class="small">Exchange invites and refresh Friends to earn a picnic decoration together. More mutual friends unlock more gifts. No purchase needed; gifts are also earnable through your own movement.</p></div></div>
+      <div class="gift"><img src="assets/picnic.png" alt="A picnic blanket and basket" width="184" height="180"><div><strong>Earn a picnic decoration</strong><p class="small">Accept a friend invitation to earn a picnic decoration together. More mutual friends unlock more gifts. No purchase needed; gifts are also earnable through your own movement.</p></div></div>
       <noscript><p class="small">Turn on JavaScript to open your friend invite, or copy the full link from your address bar and paste it into Waddle → Friends → Add friends.</p></noscript>
     </section>
   </main>
-  <footer><span>Small steps. A world of your own.</span><nav aria-label="Legal"><a href="../privacy/">Privacy</a><a href="../terms/">Terms</a></nav></footer>
+  <footer><nav aria-label="Legal"><a href="../privacy/">Privacy</a><a href="../terms/">Terms</a></nav></footer>
   <script>
     (() => {
       const get = id => document.getElementById(id);
@@ -57,20 +56,29 @@
         inviteURL = '';
         for (const id of ['open-app','invite-help','invalid','fallback','fallback-label']) get(id).hidden = true;
         get('open-app').removeAttribute('href'); get('copy-status').textContent = ''; get('fallback').value = '';
-        get('inviter').textContent = 'Your flock is waiting';
-        get('intro').textContent = 'Get Waddle for iPhone, then exchange invites from the Friends tab.';
+        get('inviter').textContent = 'Join a friend on Waddle';
+        get('intro').textContent = 'Get Waddle for iPhone, then accept your invitation in Friends.';
         if (!location.hash) return;
         try {
           if (new TextEncoder().encode(location.href).length > 8192 || /%(?![0-9a-f]{2})/i.test(location.hash) || location.search) throw Error();
           const fields = new URLSearchParams(location.hash.slice(1));
-          if (fields.getAll('share').length !== 1 || fields.getAll('name').length > 1) throw Error();
-          const raw = fields.get('share');
-          // Inspect the authority too: URL normalizes away an explicit :443 port.
-          if (!/^https:\/\/(www\.)?icloud\.com\/share\//.test(raw)) throw Error();
-          const share = new URL(raw);
-          if (share.protocol !== 'https:' || !['www.icloud.com','icloud.com'].includes(share.hostname) || share.username || share.password || share.port || !share.pathname.startsWith('/share/') || share.pathname.length <= 7) throw Error();
+          if ([...fields.keys()].some(key => !['invite','share','name'].includes(key)) || fields.getAll('name').length > 1) throw Error();
+          const token = fields.get('invite');
+          let capability;
+          if (token !== null) {
+            if (fields.getAll('invite').length !== 1 || fields.has('share') || !/^[0-9a-f]{64}$/.test(token)) throw Error();
+            capability = 'invite=' + token;
+          } else {
+            // Older links still open the app, which explains how to get a new invite.
+            if (fields.getAll('share').length !== 1) throw Error();
+            const raw = fields.get('share');
+            if (!/^https:\/\/(www\.)?icloud\.com\/share\//.test(raw)) throw Error();
+            const share = new URL(raw);
+            if (share.protocol !== 'https:' || !['www.icloud.com','icloud.com'].includes(share.hostname) || share.username || share.password || share.port || !share.pathname.startsWith('/share/') || share.pathname.length <= 7) throw Error();
+            capability = 'share=' + encodeURIComponent(raw);
+          }
           const name = Array.from((fields.get('name') || '').replace(/\s+/gu,' ').replace(/[\u0000-\u001f\u007f-\u009f]/g,'').trim()).slice(0,30).join('');
-          const fragment = 'share=' + encodeURIComponent(raw) + (name ? '&name=' + encodeURIComponent(name) : '');
+          const fragment = capability + (name ? '&name=' + encodeURIComponent(name) : '');
           inviteURL = 'https://spammusubitech.github.io/waddle-to-run/join/#' + fragment;
           get('open-app').href = 'waddle-to-run://friend#' + fragment;
           get('open-app').hidden = false; get('invite-help').hidden = false;
