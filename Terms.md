@@ -7,9 +7,9 @@ permalink: /terms/
 
 # Terms and Conditions for Waddle to Run
 
-Last updated: November 16, 2026
+Last updated: November 19, 2026
 
-Version: 2026-11-16.2
+Version: 2026-11-19.1
 
 Please read these Terms and Conditions carefully before using Waddle to Run. References to Waddle to Run may include the `goose-running` app, public pages, support materials, or similar names used for the Service.
 
@@ -37,7 +37,7 @@ For these Terms and Conditions:
 
 ## Acknowledgment
 
-These Terms govern Your use of the Service and form a binding agreement between You and the Company. Before starting Your first activity, You must affirmatively accept these Terms in the Application. By selecting “Agree to Terms & start,” You acknowledge that You have read, understood, and agree to be bound by these Terms, including the Important Fitness and Health Notice and the Voluntary Participation, Assumption of Risk, and Release. Your selection of “Agree to Terms & start” constitutes Your electronic signature and acceptance of these Terms. If You do not agree, do not begin an activity through the Service.
+These Terms govern Your use of the Service and form a binding agreement between You and the Company. Before starting Your first activity, You must affirmatively accept these Terms in the Application. The Application identifies the button that accepts these Terms, either in the button label or in a notice directly beside it. By tapping that button, You acknowledge that You have read, understood, and agree to be bound by these Terms, including the Important Fitness and Health Notice and the Voluntary Participation, Assumption of Risk, and Release. Tapping that button constitutes Your electronic signature and acceptance of these Terms. If You do not agree, do not begin an activity through the Service.
 
 Your use of the Service is also subject to Our [Privacy Policy](https://spammusubitech.github.io/waddle-to-run/privacy/), which explains how the Application handles location and route data, running plans and progress, Apple Health workouts, iCloud sync, notifications, route sharing, purchases, analytics, and support requests.
 
